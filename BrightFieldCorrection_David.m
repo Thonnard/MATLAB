@@ -24,7 +24,7 @@ folder_images = uigetdir('*.*','Select folder with image files');
 
 % list all image files
 list_files = dir(folder_images);
-list_files = list_files(~[list_files.isdir]); % only include files; exlcude folders
+list_files = list_files(~[list_files.isdir]); % only include files; exclude folders
 
 % count number of image files
 index = length(list_files);
